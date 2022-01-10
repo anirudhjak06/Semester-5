@@ -1,0 +1,64 @@
+First we import all the neccessary files.
+Then we come to main function
+Here, we use the imported libraries.
+Firstly, we use the glInit function to initialise the imported GLUT library
+Now, we want to create a window for our output to be displayed and see that its is RGB window aso that all the colors are displayed accurately and precisely.
+We specify the window position and window size as arguemnts for a clearrer output window
+We name its as Solar System.
+
+(1)Now, we call our first created function Light_initialize()
+Now, we got the function definition and where it has been declared.
+Here, we specify the different lighting effects using these ambient, diffuse and specular.
+These lighting show the lighting properties of an object.
+Ambient shows that no object is completely dark and it ha ssome clor
+Diffuse shows that when he more a part of an object faces the light source, the brighter it becomes.
+Specular simulates the bright spot of a light that appears on shiny objects. 
+
+(2) Next, we have initialize_display().
+glClearColor specifies the red, green, blue, and alpha values used by glClear to clear the color buffers.
+glPointSize specifies the rasterized diameter of points
+glLineWidth specifies the width of rasterized lines.
+
+(3)We use glutDisplayFunc to redisplay the window
+ It is a callback function
+
+(4) display_background() - It displays the background color in the window
+
+(5) display_orbit() - It displays all the orbits (
+There are totaly 9 orbits
+i=5 is the saturn
+
+glLoadIdentity — replace the current matrix with the identity matrix
+glPushMatrix and glPopMatrix : To push and pop the current matrix stack.
+glEnable — enable or disable server-side GL capabilities
+GL_COLOR_MATERIAL - To track the current color
+glMaterialfv - This function specifies material parameters for the lighting model.
+glutSolidSphere - Renders a solid sphere. 
+void glutSolidSphere(GLdouble radius,GLint slices, GLint stacks);
+Here, radius - The radius of the sphere.
+slices- The number of subdivisions around the Z axis (similar to lines of longitude).
+stacks- The number of subdivisions along the Z axis (similar to lines of latitude).
+
+(6) Now, we are going to specify translations, rotations, scaling etc for each palnets.
+For each planet We do the following :
+(i) Firstly, we push the vector into the matrix.
+(ii) We then initialize the color for each planet.
+(iii) Now, we scale the planet size to the requirement.
+(iv) We now perform rotations and translations.
+(v) Finally, we will render the solid sphere and pop the current stack.
+
+We repeat these proccess for other planets as well.
+
+Order of the planets:
+Mercury, Venus, Earth with moon, Mars, Jupiter with moon, Saturn with ring of dust, Uranus(light blue), Neptune(dark blue)
+
+glFlush function empties all these buffers, causing all issued commands to be executed as quickly as they are accepted by the actual rendering engine.
+
+(7) change_axis()
+This function is just for revolution of the planets
+
+glutPostRedisplay marks the current window as needing to be redisplayed.
+glutTimerFunc registers a timer callback to be triggered in a specified number of milliseconds.
+glutMainLoop enters the GLUT event processing loop.
+
+

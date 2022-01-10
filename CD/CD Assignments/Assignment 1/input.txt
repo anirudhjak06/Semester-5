@@ -1,0 +1,17 @@
+hello everyone, Our group has successfully completed the first Compiler Design Assignment on 08-09-21, which was consisted of many possible conditions.
+the deadline for submission is 11th Sep we started working on this from 5-09-2021 or 5-09-21.
+"there" are several conditions that needed to considered such as Date Format and other minor conditions.
+some examples are 10-02-20, also 2-02-2020, 5th Aug 2020 or 06th Sep and many more.
+also we have included the multiple paragraph case scenario and capitalisation of first character after each new sentence. that made the Assignment perfectely completable.
+
+
+kudos to the team on accomplishing the Assignment on time!!
+
+Dhiraj, Siddharth & Bhima Shankar
+
+/*****************************************/
+
+
+
+
+

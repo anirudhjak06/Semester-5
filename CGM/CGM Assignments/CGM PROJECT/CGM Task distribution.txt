@@ -1,0 +1,14 @@
+Introduction, Abstract - Neeraj
+Problem Motivation Statemement Solution - Anirudh
+Requirements, Library - Harish
+Execution, Run, Details - Rakesh
+Additional Features - Neeraj
+Material - Anirudh 
+Research Method - Harish
+Sizes, Speed, Distance - Rakesh
+Code Snippets - Show VS code and run the file an talk about PPT run and execution and explain till 1st point -Anirudh
+2,3,4 - Neeraj
+5 - Rakesh
+6,7 - Harish
+Experimental Results- Neeraj
+Conclusion and Thank you - Anirudh
