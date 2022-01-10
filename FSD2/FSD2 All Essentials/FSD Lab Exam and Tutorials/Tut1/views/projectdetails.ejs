@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2</title>
+    </head>
+    <body>
+        <%- include('navbar'); %>
+        <h2>Project Details Table</h2>
+        <table>
+            <tr>
+              <th>Sl No</th>
+              <th>Project Name</th>
+              <th>Roll No</th>
+              <th>Semester</th>
+              <th>Project Details</th>
+              <th>Technology Used</th>
+            </tr>
+            <% for(const book of model) { %>
+            <tr>
+              <td><%=book.pid %></td>
+              <td><%=book.pname %></td>
+              <td><%=book.rollno %></td>
+              <td><%=book.semester %></td>
+              <td><%=book.pdetails %></td>
+              <td><%=book.techused %></td>
+            </tr>
+          <% } %>
+        </table>
+    </body>
+</html>

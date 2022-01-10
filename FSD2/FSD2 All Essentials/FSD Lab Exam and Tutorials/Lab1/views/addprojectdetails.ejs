@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2</title>
+    </head>
+    <body>
+        <%- include('navbar'); %>
+        <h2> Climate Survey Form</h2>
+        <div>
+            <form action="/Form" method="POST">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age">
+          
+              <label for="education">Highest Education Received</label>
+              <input type="text" id="education" name="education">
+              
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="Australia">Australia</option>
+                <option value="England">England</option>
+              </select>
+              
+              <label for="issuedetails">Issue</label>
+              <input type="text" id="issue" name="issue">
+
+              <label for="impdetails">Why it is Important?</label>
+              <input type="text" id="imp" name="imp">
+
+              <label for="causedetails">What causes climate change?</label>
+              <input type="text" id="cause" name="cause">
+
+              <label for="impactdetails">Impact</label>
+              <input type="text" id="impact" name="impact">
+
+              <label for="tackledetails">Tackle</label>
+              <input type="text" id="tackle" name="tackle">
+              
+              <label for="actionused">Action Taken</label>
+              <input type="text" id="action" name="action">
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </body>
+</html>

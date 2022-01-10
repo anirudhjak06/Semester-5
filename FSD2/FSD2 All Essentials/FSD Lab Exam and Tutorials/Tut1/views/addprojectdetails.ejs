@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2</title>
+    </head>
+    <body>
+        <%- include('navbar'); %>
+        <h2> Add Details of Our Project</h2>
+        <div>
+            <form action="/Form" method="POST">
+              <label for="pname">Project Name</label>
+              <input type="text" id="pname" name="pname">
+          
+              <label for="rollno">Roll-No</label>
+              <input type="text" id="rollno" name="rollno">
+              
+              <label for="sem">Semester</label>
+              <select name="sem" id="sem">
+                <option value="UG1">UG1</option>
+                <option value="UG2">UG2</option>
+                <option value="UG3">UG3</option>
+                <option value="UG4">UG4</option>
+              </select>
+              
+              <label for="projectdetails">Project Details</label>
+              <input type="text" id="pdetails" name="pdetails">
+              
+              <label for="technologyused">Technology Used</label>
+              <input type="text" id="techused" name="techused">
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </body>
+</html>

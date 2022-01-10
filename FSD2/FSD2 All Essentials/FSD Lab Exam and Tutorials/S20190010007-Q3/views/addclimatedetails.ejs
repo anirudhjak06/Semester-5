@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2</title>
+    </head>
+    <body>
+        <%- include('navbar'); %>
+        <h2> Climate Survey Form</h2>
+        <div>
+            <form action="/Form" method="POST">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age"><br>
+          
+              <label for="education">Highest Education Received</label>
+              <input type="text" id="education" name="education"><br>
+              
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="Australia">Australia</option>
+                <option value="England">England</option>
+              </select>
+              <br>
+              <label for="issuedetails">Issue</label>
+              <input type="text" id="issue" name="issue"><br>
+
+              <label for="impdetails">Why it is Important?</label>
+              <input type="text" id="imp" name="imp"><br>
+
+              <label for="causedetails">What causes climate change?</label>
+              <input type="text" id="cause" name="cause"><br>
+
+              <label for="impactdetails">Impact</label>
+              <input type="text" id="impact" name="impact"><br>
+
+              <!-- <label for="tackledetails">Tackle</label>
+              <input type="text" id="tackle" name="tackle"><br> -->
+              <p1>Tackle</p1><br>
+              <input type="checkbox" id="tackle" name="tackle" value="The national government">
+              <label for="tackle">The national government</label><br>
+              <input type="checkbox" id="tackle2" name="tackle2" value="t2">
+              <label for="tackle2">Local government</label><br>
+              <input type="checkbox" id="tackle3" name="tackle3" value="t3">
+              <label for="tackle3">Business and industry</label><br>
+              <input type="checkbox" id="tackle4" name="tackle4" value="t4">
+              <label for="tackle4">Environmental organisations</label><br>
+              <input type="checkbox" id="tackle5" name="tackle5" value="t5">
+              <label for="tackle5">Individuals</label><br><br>
+              
+              <label for="actionused">Action Taken</label>
+              <input type="text" id="action" name="action"><br>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </body>
+</html>

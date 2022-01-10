@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2 Lab Exam</title>
+    </head>
+    <style>
+      #f1 {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #f1 td, #f1 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #f1 tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #f1 tr:hover {background-color: #ddd;}
+      
+      #f1 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+      }
+      </style>
+    <body>
+        <%- include('navbar'); %>
+        <h2>Climate Survey Table</h2>
+        <table id="f1">
+            <tr>
+              <th>Sl No</th>
+              <th>Timestamp</th>
+              <th>Age</th>
+              <th>Education</th>
+              <th>Country</th>
+              <th>Issue</th>
+              <th>Imp</th>
+              <th>Cause</th>
+              <th>Impact</th>
+              <th>Tackle</th>
+              <th>Action</th>
+            </tr>
+            <% for(const book of model) { %>
+            <tr>
+              <td><%=book.pid %></td>
+              <td><%=book.sqltime %></td>
+              <td><%=book.age %></td>
+              <td><%=book.education %></td>
+              <td><%=book.country %></td>
+              <td><%=book.issue %></td>
+              <td><%=book.imp %></td>
+              <td><%=book.cause %></td>
+              <td><%=book.impact %></td>
+              <td><%=book.tackle %></td>
+              <td><%=book.action %></td>
+            </tr>
+          <% } %>
+        </table>
+    </body>
+</html>
