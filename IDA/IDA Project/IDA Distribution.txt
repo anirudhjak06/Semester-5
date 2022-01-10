@@ -1,0 +1,21 @@
+Report
+Intro - Neeraj
+Corr - Harish
+Linear - Anirudh
+Non Linear - Rakesh
+R2 - Manish
+
+Code
+1,2,3 - Manish
+Corr (4) - Harish
+Linear (5) - Neeraj
+Non Linear (6) - Anirudh
+R2 (7) - Rakesh
+
+Exp results: 
+1 - Harish
+2a - Manish
+2b - Neeraj
+3a & b - Rakesh
+
+Conclusion - Anirudh
